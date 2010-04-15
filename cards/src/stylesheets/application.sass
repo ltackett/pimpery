@@ -61,13 +61,8 @@ $animation-ease = "ease-in-out"
     +apply-transform("skew(0, -15deg) scale(0.83, 1)")
     -webkit-transition: all $animation-speed $animation-ease
 
-  &.prev
-    margin:
-      top: 40px
-      left: 30px
-    .mirror-me, .mirrord
-      +apply-transform("skew(0, -10deg) scale(0.9, 1)")
-  &.current, &:target
+
+  &:target
     margin:
       right: 0px
       top: 75px
@@ -76,24 +71,3 @@ $animation-ease = "ease-in-out"
       +apply-transform("skew(0, 0) scale(1.1, 1.1)")
     .mirror-me h1
       color: #f00
-  &.next
-    margin:
-      top: 5px
-      right: -220px
-      left: 0
-    .mirror-me, .mirrord
-      +apply-transform("skew(0, -25deg) scale(0.7, 1)")
-  
-  / &:nth-child(1)
-  /   .mirror-me, .mirrord
-  /     +apply-transform(skew(0, -15deg))
-  / &:nth-child(2)
-  /   .mirror-me, .mirrord
-  /     +apply-transform(skew(0, -10deg))
-  /   .mirror-me
-  /     margin-top: 10px
-  / &:nth-child(3)
-  /   .mirror-me, .mirrord
-  /     +apply-transform(skew(0, -5deg))
-  /   .mirror-me
-  /     margin-top: 20px
