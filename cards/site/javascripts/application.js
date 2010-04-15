@@ -1,6 +1,5 @@
 jQuery.fn.classcade = function() {
     $(this).prev('.unit').addClass('prev');
-    $(this).addClass('current');
     $(this).next('.unit').addClass('next');
 }
 
