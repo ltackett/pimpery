@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Pick a card...
+    
+    -# Call stylesheets
+    = stylesheets
+    
+    -# Call JS libraries
+    = javascripts 'http://www.google.com/jsapi', :modernizr
+    :javascript
+      google.load("jquery", "1.4.2");
+      google.load("jqueryui", "1.7.2");
+    
+    -# Call jQuery plugins and app JS
+    = javascripts 'jquery-css-transform', 'rotate3Di-0.9', :application
+    
+  %body
+    %h1.title Pick a card...
+    #wrap
+      = yield
